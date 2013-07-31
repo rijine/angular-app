@@ -1,22 +1,26 @@
 [
   {
-    "accountId": 1,
-    "accountName": "Supratma Aneka Industri",
-    "customerInfo": [
-      {"customerName": "Name 1", "customerAddress": "Address 1", "warehouseCapacity": 19}
-    ],
-    "customerContactInfo": [
+    "id": 1,
+    "name": "Acme Industri",
+    "address": "Address of Company1",
+    "warehouseCapacity": 1000,
+    "decisionMakingProcess": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+    "region": {
+      "id": 1,
+      "name": "APAC"
+    },
+    "contacts": [
       {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
       {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
       {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
       {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
       {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"}
     ],
-    "endProductInfo": [
-      {"endProduct": "Injection Cup Depot Part High Gloss", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"}
+    "endProductinfos": [
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"}
     ],
     "customerDetails": [
       {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"},
@@ -26,72 +30,24 @@
       {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"}
     ], 
     "rawMaterialNeeds": [
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"}
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"}
     ], 
-    "rawMaterialSourcing": [
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "Credit using bank guarantee (> 30 days)"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"}
+    "rawMaterialSources": [
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"}
     ],
-    "decisionMaking": {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"},
     "keyBuyingFactors": [
-      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"},
-      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"}
+      {"buyingFactor": {"name": "dasasdas"}, "rating": "dasdasdasd", "details": "dasdasdasd scsds"},
+      {"buyingFactor": {"name": "dasasdas"}, "rating": "dasdasdasd", "details": "dasdasdasd scsds"}
     ],
     "buyingBehavior": {
       "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
-      "revenue": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
-    }
-  },
-  {
-    "accountId": 2,
-    "accountName": "Acme Industri",
-    "customerInfo": [
-      {"customerName": "Name 1", "customerAddress": "Address 1", "warehouseCapacity": 12}
-    ],
-    "customerContactInfo": [
-      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
-      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
-      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
-      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"}
-    ],
-    "endProductInfo": [
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
-      {"endProduct": "ep2ww2wq", "volume": "sfsdfsdsd", "rawMaterial": "adsdas", "grade": "adssadas", "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"}
-    ],
-    "customerDetails": [
-      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "Other": "dasdsasd"},
-      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "Other": "dasdsasd"},
-      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "Other": "dasdsasd"},
-      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "Other": "dasdsasd"},
-      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "Other": "dasdsasd"}
-    ], 
-    "rawMaterialNeeds": [
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
-      {"rawMaterial": "aljdlsjdasd", "grade": "kjashaslh", "specificGrade": "asdasasd", "totalVolume": "sdsadas"}
-    ], 
-    "rawMaterialSourcing": [
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
-      {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"}
-    ],
-    "decisionMaking": {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"},
-    "keyBuyingFactors": [
-      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"},
-      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"}
-    ],
-    "buyingBehavior": {
-      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
-      "revenue": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
+      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
+      "revenue": [[95, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
     }
   }
 ]

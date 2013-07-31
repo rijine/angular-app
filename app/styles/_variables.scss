@@ -1,7 +1,7 @@
 $border-radius: 3px;
 $default-text-shadow-color: black;
 $app_gray: #666666;
-$app_blue: #106AC8;
+$app_blue: #1277E0;
 $app_lgray: #999999;
 
 .hidden {
@@ -9,21 +9,54 @@ $app_lgray: #999999;
   visibility: hidden;
 }
 
+.loading {
+  margin-bottom: 10px;
+  img {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+  }
+  p {
+    display: inline;
+    color: $app_lgray;
+    font-size: 0.8em;
+  }
+}
+
+.one-column {
+  margin: 20px;
+}
+
 @mixin box-div {
-  padding: 2px 12px;
+  padding: 12px 12px;
   background-color: #FFFFFF;
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   color: $app_gray;
   height: 135px;
   box-shadow: 0px 2px 5px lighten($app_gray, 40%);
   overflow: scroll;
-  border-top: 10px solid white;
   border-bottom: 10px solid white;
+  position: relative;
+
+  .right{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    margin: 0px 8px;
+  }
 
   h4 {
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: 0px;
+    display: inline;
+  }
+  h4.unit {
+    @extend h4;
+    color: $app_lgray;
+    margin-left: 5px;
   }
 
   table {
@@ -34,14 +67,40 @@ $app_lgray: #999999;
     thead {
       td {
         color: $app_blue;
-        padding-right: 20px;
+        padding-right: 5px;
       }
     }
     tbody {
       td {
         color: $app_lgray;
-        padding-right: 7px;
+        padding-right: 5px;
       }
     }
+    td.padded {
+      padding-top: 21px;
+      padding-right: 10px;
+    }
   }
+  table.bordered {
+    @extend table;
+    margin-top: 10px;
+    tr {
+      border-top: 1px solid #CCCCCC;
+    }
+    td {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+.coming-soon {
+  position: absolute;
+  top: 22px;
+  right: -45px;
+  background-color: red !important;
+  color: white;
+  padding: 6px 62px;
+  @include transform(rotate(30deg));
+  border-radius: $border-radius;
 }

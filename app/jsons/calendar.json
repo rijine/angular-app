@@ -1,0 +1,8 @@
+[
+  {"start": "12-May-2013", "accountName" : "Superatma Inc.", "title": "12 May Meeting with 1", "details": "Some random text that I always type."},
+  {"start": "12-Jun-2013", "accountName" : "Superatma Inc.", "title": "12 Jun Meeting with 1", "details": "Need to decide payment plan with Acme."},
+  {"start": "12-Jun-2013", "accountName" : "Superatma Inc.", "title": "12 Jun Meeting with 2", "details": "Need to remind Rocky."},
+  {"start": "13-Jun-2013", "accountName" : "Superatma Inc.", "title": "13 Jun", "details": "Need to finish raw material stock."},
+  {"start": "19-Jun-2013", "accountName" : "Superatma Inc.", "title": "19 Jun", "details": "Need to deliver status report."},
+  {"start": "12-Jul-2013", "accountName" : "Superatma Inc.", "title": "12 Jul - Meeting", "details": "Get work done."}
+]

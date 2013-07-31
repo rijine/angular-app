@@ -41,3 +41,7 @@
     }
   }
 }
+
+.modal-backdrop.fade.in {
+  @include ctb-opacity(100);
+}

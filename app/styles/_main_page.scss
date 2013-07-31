@@ -6,8 +6,7 @@
   height: 100%;
   width: 100%;
 
-  background-image: url("/images/bg.jpg");
-  background-repeat:no-repeat;
+  background-image: url("../images/bg.png");
   background-attachment:fixed;
   background-position:center; 
 
@@ -56,7 +55,10 @@
     li.blue {
       @extend li;
       @include background(linear-gradient(top, #0066CB, #005CB9));
+      margin-top: 30px;
+      height: 35px;
       a{
+        margin-left: 12%;
         color: white;
       }
     }

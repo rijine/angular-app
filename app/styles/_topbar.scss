@@ -1,10 +1,10 @@
 .top-bar {
-  width: 87%;
+  width: 84%;
   display: inline;
   font-size: 0.9em;
   li {
     line-height: 30px;
-    width: 24%;
+    width: 21%;
     text-align: center;
     a {
       color: white !important;
@@ -12,7 +12,7 @@
       font-size: 0.95em;
     }
     border-width: 0px 2px 0px 0px;
-    border-image: url("/images/divider_topbar.png") 5 5 5;
+    border-image: url("../images/divider_topbar.png") 5 5 5;
   }
 
   li.active {
@@ -26,13 +26,16 @@
   }
 }
 
-.ten-wide {
-  width: 5%;
-  float: left !important;
+.little-wide {
   li {
     a {
       text-shadow: none !important;
       text-decoration: none !important;
+      font-size: 0.8em;
+      margin-right: -35px;
+      img {
+        margin-right: 10px;
+      }
     }
   }
 }

@@ -1,0 +1,71 @@
+<div class="span12">
+  <div class="head">
+    <h2>{{subpage}}</h2> / 
+    <a href="#/plan/{{accountId}}/Customer%20Interaction">Go Back</a>
+  </div>
+  <div class="row-fluid">
+    <div class="span10">
+      <div class="add-plan">
+        <h4>Add Customer Interaction</h4>
+        <form data-ng-submit="addInteraction(interaction)">
+          <span class="label">Meeting Date</span>
+          <input type="text" ui-date ui-date-format="dd-M-yy" ng-model="interaction.meetingDate" placeholder="Meeting Date" ng-required="true"/>
+          <span class="label">Person Met</span>
+          <input type="text" ng-model="interaction.personMet" placeholder="Person Met" required/><br/>
+          <span class="label">Start Time</span>
+          <input type="time" ng-model="interaction.startTime" placeholder="Start Time" required/>
+          <span class="label">End Time</span>
+          <input type="time" ng-model="interaction.endTime" placeholder="End Time" required/><br/>
+          <span class="label">Meeting Objective</span>
+          <input type="text" ng-model="interaction.meetingObjective" placeholder="Meeting Objective" required/>
+          <span class="label">Meeting Result</span>
+          <input type="text" ng-model="interaction.meetingResult" placeholder="Meeting Result" required/><br/>
+          <input class="btn-primary" type="submit" value="Add Interaction" ng-hide="showPoints">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span10">
+      <div class="add-items" ng-show="showPoints">
+        <h4>Add Customer Interaction Main Points</h4>
+        <form data-ng-submit="addMainPoint(mainPoint)">
+          <span class="label">Point/s</span>
+          <textarea ng-model="mainPoint.point" placeholder="Point" required></textarea><br/>
+          <span class="label">Next Step</span>
+          <input type="text" ng-model="mainPoint.nextStep" placeholder="Next Step" required><br/>
+          <span class="label">PIC</span>
+          <input type="text" ng-model="mainPoint.pic" placeholder="PIC" required/></br>
+          <input class="btn-primary" type="submit" value="Add Main Point">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span10" ng-show="showPoints">
+      <h4>Customer Interaction Main Points</h4>
+      <table class="table items">
+        <thead>
+          <tr>
+            <th>Main Point</th>
+            <th>Next Steps</th>
+            <th>PIC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="point in mainPoints">
+            <td>{{point.point}}</td>
+            <td>{{point.nextStep}}</td>
+            <td>{{point.pic}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span10" ng-show="mainPoints.length > 0" class="save-cancel">
+      <button class="btn-app" ng-click="saveInteraction()">Save Interaction</button>
+      <a href="#/plan/{{accountId}}/Customer%20Interaction" class="btn-gray">Cancel and Go Back</a>
+    </div>
+  </div>
+</div>

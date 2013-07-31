@@ -1,0 +1,26 @@
+@import "_variables";
+@import "compass/css3";
+
+.one-column {
+  .boxy {
+    @include box-div;
+    padding: 20px;
+    height: 155px;
+    ul {
+      list-style: none;
+      li {
+        @extend .label;
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .boxy-tall {
+    @extend .boxy;
+    height: 420px;
+  }
+}

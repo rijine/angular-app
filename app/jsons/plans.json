@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Acme Industri",
+    "actionPlans": [
+      {"id": "5dfdf862-68dd-4b5f-a5b0-837e865e444a", "valueProposition": "VP8", "issue": "Issue 1", "actionPlanItems": [{"actionItem": "Item1 which is some long text that I typed", "decisionMaker": "Someone I Know", "dueDate": "12-Jun-2013", "pic": "John Doe", "nextStep": "Do Something", "status": "amber"}, {"actionItem": "Item2 which is some long text that I typed", "decisionMaker": "Someone I Know", "dueDate": "14-Jun-2013", "pic": "John Doe", "nextStep": "Do Something", "status": "amber"}]},
+      {"id": "aa952503-f1f3-4410-b2fa-d0a76bac8535", "valueProposition": "VP3", "issue": "Issue 3", "actionPlanItems": [{"actionItem": "Item1 which is some long text that I typed", "decisionMaker": "Someone I Know", "dueDate": "12-Jun-2013", "pic": "John Doe", "nextStep": "Do Something", "status": "amber"}, {"actionItem": "Item2 which is some long text that I typed", "decisionMaker": "Someone I Know", "dueDate": "14-Jun-2013", "pic": "John Doe", "nextStep": "Do Something", "status": "amber"}]}
+    ],
+    "interactions": [
+      {"id": "0ae88b7b-1643-4512-b153-3a8c7dcabb17", "personMet": "John Doe", "meetingDate": "11-Jun-2013", "startTime": "12:00 PM", "endTime": "1:00 PM", "meetingObjective": "Something...", "meetingResult": "Maybe some long textual information...", "mainPoints": [{"point": "Point which is some long text that I typed", "pic": "Josh Doe", "nextStep": "Do Something"}, {"point": "Point which is some long text that I typed", "pic": "John Doe", "nextStep": "Do Something"}]},
+      {"id": "dasafsdsd1232", "personMet": "Jane Doe", "meetingDate": "12-Jun-2013", "startTime": "12:00 PM", "endTime": "1:00 PM", "meetingObjective": "Something...", "meetingResult": "Maybe some long textual information...", "mainPoints": [{"point": "Point which is some long text that I typed", "pic": "Jake Doe", "nextStep": "Do Something"}, {"point": "Point which is some long text that I typed", "pic": "John Doe", "nextStep": "Do Something"}]}
+    ]
+  }
+]

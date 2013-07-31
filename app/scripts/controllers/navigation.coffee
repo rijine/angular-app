@@ -2,15 +2,20 @@
 
 class NavigationCtrl
 
-  constructor: (@$scope, @$location, @$routeParams, @storageService) ->
-    if @storageService.get("token")
+  constructor: (@$scope, @$location, @$routeParams, @storageService, @securityService) ->
+    if @securityService.isSecure()
       @$scope.logout = @logout
+      @$scope.close = @close
+      @$scope.username = @storageService.getDecrypted("username")
     else
-      @$location.url("login")
+      @logout()
 
   logout: =>
-    @storageService.clear()
+    @storageService.logout()
     @$location.url("/")
 
-NavigationCtrl.$inject = ["$scope", "$location", "$routeParams", "storageService"]
+  close: =>
+	  @$location.url("main")
+
+NavigationCtrl.$inject = ["$scope", "$location", "$routeParams", "storageService", "securityService"]
 angular.module("webApp").controller "NavigationCtrl", NavigationCtrl

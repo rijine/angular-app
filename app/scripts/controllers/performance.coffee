@@ -2,10 +2,17 @@
 
 class PerformanceCtrl
 
-  constructor: (@$scope, @$location, @$routeParams, @storageService) ->
-    @$location.url("login") unless @storageService.get("token")
-
+  constructor: (@$scope, @$location, @$routeParams, @storageService, @webService) ->
     @$scope.page = "performance"
 
-PerformanceCtrl.$inject = ["$scope", "$location", "$routeParams", "storageService"]
+    promise = @webService.getSalesVolume()
+    @setScope promise
+
+  setScope: (promise) ->
+    promise.then (success) =>
+      @$scope.salesVolume  = success.data
+    , (error) ->
+      console.log(error)
+
+PerformanceCtrl.$inject = ["$scope", "$location", "$routeParams", "storageService", "webService"]
 angular.module("webApp").controller "PerformanceCtrl", PerformanceCtrl

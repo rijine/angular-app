@@ -1,0 +1,107 @@
+@import "_variables";
+@import "compass/css3";
+
+.main-content {
+  .action-plan {
+    @include box-div;
+    margin-top: 10px;
+    height: 450px;
+  }
+  .interaction {
+    @include box-div;
+    margin-top: 10px;
+    height: 450px;
+  }
+}
+
+.up {
+  margin-top: -11px;
+}
+
+@mixin nice-form {
+  form {
+    input[type="text"], input[type="password"], input[type="time"] {
+      padding: 10px 7px;
+      border-radius: $border-radius;
+      @include background(linear-gradient(top, #ffffff, #f6f6f6));
+    }
+
+    input[type="submit"]{
+      width: 25%;
+      padding: 10px;
+      border-radius: $border-radius;
+      @include background(linear-gradient(top, #0066CB, #005CB9));
+      color: white;
+      @include single-text-shadow;
+    }
+
+    select {
+      height: 42px;
+    }
+  }
+}
+
+.add-plan {
+  margin-top: 30px;
+  @include nice-form;
+}
+
+.accordion {
+  margin-top: 35px;
+
+  .accordion-heading {
+    border-radius: $border-radius;
+    border: 1px solid #f6f6f6;
+    @include background(url("../images/arrow_right.png") 5px 6px no-repeat, linear-gradient(top, #ffffff, #f6f6f6));
+    box-shadow: 0px 2px 5px darken(#f6f6f6, 20%);
+    padding-left: 20px;
+
+    a {
+      color: $app_gray;
+      font-size: 1.1em;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .accordion-inner {
+    button {
+      float: right;
+      margin-bottom: 5px;
+    }
+    table {
+      margin-bottom: 10px;
+      thead {
+        tr {
+          background-color: $app_blue;
+        }
+        td {
+          color: white;
+          font-weight: 600;
+          border-radius: $border-radius;
+        }
+      }
+      td {
+        padding: 4px 2px;
+      }
+      td.dark {
+        @extend td;
+        color: $app_gray !important;
+      }
+    }
+  }
+}
+
+.add-items {
+  @include nice-form;
+}
+
+table.items {
+  background-color: white;
+  @include box-shadow(rgba(0, 0, 0, 0.125) 2px 1px 10px);
+  font-size: 0.9em;
+  th {
+    color: $app_blue;
+  }
+}

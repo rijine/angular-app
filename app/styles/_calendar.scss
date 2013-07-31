@@ -1,0 +1,30 @@
+@import "_variables";
+@import "compass/css3";
+
+.fc-header-title {
+  h2 {
+    color: $app_blue;
+  }
+}
+
+table.fc-header{
+  td {
+    padding: 10px 15px 0px 15px !important;
+  }
+}
+
+.fc-event {
+  border: 1px solid #FCFCFC;
+  border-radius: $border-radius;
+  @include background(linear-gradient(top, #67B0D5, #5AA2D0));
+  color: #fff;
+  font-size: .85em;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 95%;
+}
+
+.fc-button-today {
+  visibility: hidden;
+}

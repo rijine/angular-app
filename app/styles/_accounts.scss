@@ -1,96 +1,6 @@
 @import "_variables";
 @import "compass/css3";
 
-.sidebar {
-    list-style: none;
-    margin-left: 0px;
-
-    li a {
-      color: $app_gray;
-      display: block;
-      height: 30px;
-      border: 1px solid #ccc;
-      padding: 30px 10px 30px 10px;
-      text-align: center;
-      font-size: 1.15em;
-      @include background(linear-gradient(top, #ffffff, #f2f2f2));
-      &:hover {
-        text-decoration: none;
-        @include background(linear-gradient(top, #f2f2f2, #f9f9f9));
-      }
-    }
-
-    li.active a {
-      color: $app_blue;
-      border-right: 4px solid #C8142D;
-      @include background(linear-gradient(top, #eee, #ddd));
-      @include box-shadow(rgba(0, 0, 0, 0.125) 1px 9px 20px inset);
-    }
-}
-
-.sub-bar {
-  height: 43px;
-  margin-left: -20px;
-  margin-right: -20px;
-  @include background(linear-gradient(top, #FEFEFE, #F5F5F5));
-  @include box-shadow(rgba(0, 0, 0, 0.125) 1px 1px 1px);
-
-  ul {
-    list-style: none;
-    margin: 2px 0px 0px 18px;
-    padding-top: 10px;
-    li {
-      display: inline;
-      margin-right: 25px;
-      padding: 10px;
-      border-radius: $border-radius;
-      a {
-        font-weight: 500;
-        padding: 10px 0px;
-        color: $app_gray;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-    li.active {
-      @extend li;
-      background-color: #DCDCDC;
-    }
-  }
-}
-
-.head {
-  display: inline;
-  h2 {
-    display: inline;
-    color: $app_blue;
-    font-size: 1.4em;
-  }
-}
-
-.sub-nav {
-  list-style: none;
-  display: inline;
-  margin-top: 10px;
-  li {
-    display: inline;
-    padding: 10px;
-    a {
-      font-size: 0.8em;
-      text-transform: uppercase;
-      color: $app_gray;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-  li.active {
-    @extend li;
-    border-bottom: 2px dotted red;
-  }
-}
-
 .main-content {
   .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details, .raw-mat, .buy-factors {
     @include box-div;
@@ -116,6 +26,10 @@
     @include box-div;
     height: 230px;
   }
+  .pocket-margins {
+    @include box-div;
+    height: 200px;
+  }
   .waterfall {
     @include box-div;
     height: 230px;
@@ -124,5 +38,10 @@
       height: 200px;
     }
   }
+}
+
+.sidebar-wrapper {
+  height: 720px;
+  overflow: overlay;
 }
 

@@ -1,0 +1,143 @@
+@import "_variables";
+@import "compass/css3";
+@import "compass_twitter_bootstrap/buttons";
+
+.btn-app {
+  @extend .btn-primary;
+  padding: 7px 7px;
+  border-radius: $border-radius;
+  @include background(linear-gradient(top, #0066CB, #005CB9));
+}
+
+.btn-app-danger {
+  @extend .btn-danger;
+  padding: 7px 7px;
+  border-radius: $border-radius;
+  //@include background(linear-gradient(top, #0066CB, #005CB9));
+}
+
+.btn-gray {
+  @extend .btn-primary;
+  padding: 9px 7px;
+  border-radius: $border-radius;
+  border: 2px solid darken($app_gray, 10%);
+  color: white;
+  text-shadow: none;
+  @include background(linear-gradient(top, $app_lgray, $app_gray));
+}
+
+.sidebar {
+    list-style: none;
+    margin-left: 0px;
+
+    li a {
+      color: $app_gray;
+      display: block;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 30px 10px 30px 10px;
+      text-align: center;
+      font-size: 1.15em;
+      @include background(linear-gradient(top, #ffffff, #f2f2f2));
+      &:hover {
+        text-decoration: none;
+        @include background(linear-gradient(top, #f2f2f2, #f9f9f9));
+      }
+    }
+
+    li.active a {
+      color: $app_blue;
+      border-right: 4px solid #C8142D;
+      @include background(linear-gradient(top, #eee, #ddd));
+      @include box-shadow(rgba(0, 0, 0, 0.125) 1px 9px 20px inset);
+    }
+}
+
+.sub-bar {
+  height: 43px;
+  margin-left: -20px;
+  margin-right: -20px;
+  @include background(linear-gradient(top, #FEFEFE, #F5F5F5));
+  @include box-shadow(rgba(0, 0, 0, 0.125) 1px 1px 1px);
+
+  ul {
+    list-style: none;
+    margin: 2px 0px 0px 18px;
+    padding-top: 10px;
+    li {
+      display: inline;
+      margin-right: 25px;
+      padding: 10px;
+      border-radius: $border-radius;
+      a {
+        font-weight: 500;
+        padding: 10px 0px;
+        color: $app_gray;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    li.active {
+      @extend li;
+      background-color: #DCDCDC;
+    }
+  }
+}
+
+.head {
+  display: inline;
+  h2 {
+    display: inline;
+    color: $app_blue;
+    font-size: 1.4em;
+  }
+  button {
+    margin-top: 3px;
+    margin-left: 20px;
+  }
+  .loading {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
+.sub-nav {
+  list-style: none;
+  display: inline;
+  margin-top: 10px;
+  li {
+    display: inline;
+    padding: 10px;
+    a {
+      font-size: 0.8em;
+      text-transform: uppercase;
+      color: $app_gray;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  li.active {
+    @extend li;
+    border-bottom: 2px dotted red;
+  }
+}
+
+.modal-header {
+  background-color: $app_blue;
+  color: white;
+  border-radius: 4px 4px 0px 0px;
+}
+
+form {
+  .label {
+    display: inline-block;
+    font-weight: 500;
+    width: 100px;
+  }
+}
+
+.lgray {
+  color: $app_lgray
+}

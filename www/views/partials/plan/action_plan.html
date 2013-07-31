@@ -1,0 +1,41 @@
+<div class="span12">
+  <div class="main-content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="action-plan">
+          <h4>Account Action Plan</h4>
+          <a href="#/plan/{{accountId}}/Add Plan" class="btn-app right">Add Plan</a>
+          <accordion>
+            <div ng-repeat="actionPlan in accountDetails.actionPlan">
+              <accordion-group heading="{{actionPlan.valueProposition}} | {{actionPlan.issue}}">
+                <button class="btn-app-danger" ng-click="deletePlanOrInteraction(actionPlan.uniqueId, 'actionPlan')">Delete</button>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Action Items</td>
+                      <td>Decision Maker</td>
+                      <td>Due Date</td>
+                      <td>PIC</td>
+                      <td>Next Step</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="plan in actionPlan.actionPlanItems">
+                      <td>{{plan.actionItem}}</td>
+                      <td>{{plan.decisionMaker}}</td>
+                      <td>{{plan.dueDate}}</td>
+                      <td>{{plan.pic}}</td>
+                      <td>{{plan.nextStep}}</td>
+                      <td><img ng-src="images/{{plan.status}}.png"/></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </accordion-group>
+            </div>
+          </accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

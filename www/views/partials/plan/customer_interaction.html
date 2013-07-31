@@ -1,0 +1,65 @@
+<div class="span12">
+  <div class="main-content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="interaction">
+          <h4>Interactions</h4>
+          <a href="#/plan/{{accountId}}/Add Interaction" class="btn-app right">Add Interaction</a>
+          <accordion>
+            <div ng-repeat="interaction in accountDetails.interactions">
+              <accordion-group heading="Interaction with {{interaction.personMet}} on {{interaction.meetingDate}}">
+                <div class="row-fluid">
+                  <button class="btn-app-danger" ng-click="deletePlanOrInteraction(interaction.uniqueId, 'interaction')">Delete</button>
+                </div>
+                <div class="row-fluid">
+                  <div class="span6">
+                    <table>
+                      <thead>
+                        <tr><td colspan="2">Meeting Information</td></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="dark">Person Met</td><td>{{interaction.personMet}}</td>
+                        </tr>
+                        <tr>
+                          <td class="dark">Start Time</td><td>{{interaction.startTime}}</td>
+                        </tr>
+                        <tr>
+                          <td class="dark">End Time</td><td>{{interaction.endTime}}</td>
+                        </tr>
+                        <tr>
+                          <td class="dark">Meeting Objective</td><td>{{interaction.meetingObjective}}</td>
+                        </tr>
+                        <tr>
+                          <td class="dark">Meeting Result</td><td>{{interaction.meetingResult}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="span6">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Main Points</td>
+                          <td>Next Step</td>
+                          <td>PIC</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="mainPoint in interaction.mainPoints">
+                          <td>{{mainPoint.point}}</td>
+                          <td>{{mainPoint.nextStep}}</td>
+                          <td>{{mainPoint.pic}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </accordion-group>
+            </div>
+          </accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
