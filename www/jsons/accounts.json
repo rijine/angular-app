@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Acme Industri",
+    "address": "Address of Company1",
+    "warehouseCapacity": 1000,
+    "decisionMakingProcess": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+    "region": {
+      "id": 1,
+      "name": "APAC"
+    },
+    "contacts": [
+      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
+      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
+      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
+      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"},
+      {"name": "Name 1", "position": "pos 1", "email": "abc@example.com", "phone": "112-123", "keyDecisionMaker": "some value"}
+    ],
+    "endProductinfos": [
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"},
+      {"endProduct": {"name" :"Injection Cup Depot Part High Gloss"}, "volume": "sfsdfsdsd", "rawMaterial": {"name": "adsdas"}, "grade": {"name" :"adssadas"}, "specificGrade": "csdscs", "manufacturingLocation": "sdnjshfsdiohfiwefwe", "machineSpecification": "xasas specification"}
+    ],
+    "customerDetails": [
+      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"},
+      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"},
+      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"},
+      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"},
+      {"industryPerspective": "dasihdash", "expansionPlans": "dasdasdasdas", "specificNeeds": "Dasassdasa", "other": "dasdsasd"}
+    ], 
+    "rawMaterialNeeds": [
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"},
+      {"rawMaterial": {"name": "aljdlsjdasd"}, "grade": {"name": "kjashaslh"}, "specificGrade": "asdasasd", "totalVolume": "sdsadas"}
+    ], 
+    "rawMaterialSources": [
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"},
+      {"supplier": {"name": "jhkhlkhlk"}, "rawMaterial": {"name": "khkjhkjhk"}, "grade": {"name": "dadasd"}, "volume": "adsdas", "typeOfDeal": {"name": "dasdas"}, "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerm": "Credit using bank guarantee (> 30 days)"}
+    ],
+    "keyBuyingFactors": [
+      {"buyingFactor": {"name": "dasasdas"}, "rating": "dasdasdasd", "details": "dasdasdasd scsds"},
+      {"buyingFactor": {"name": "dasasdas"}, "rating": "dasdasdasd", "details": "dasdasdasd scsds"}
+    ],
+    "buyingBehavior": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
+      "revenue": [[95, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
+    }
+  }
+]
