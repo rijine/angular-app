@@ -8,15 +8,15 @@
         <div ng-include src="'views/partials/loading.html'"></div>
         <form name="loginForm" class="simple-form" data-ng-submit="login(user)">
           <div class="input-append">
-            <input type="text" ng-model="user.username" placeholder="Username" required />
+            <input type="text" ng-model="user.username" placeholder="Username (rocky)" required />
             <span class="add-on"><img src="images/uname_icon.png"/></span>
           </div>
           <div class="input-append">
-            <input type="password" ng-model="user.password" placeholder="Password" required />
+            <input type="password" ng-model="user.password" placeholder="Password (1234)" required />
             <span class="add-on"><img src="images/password_icon.png"/></span>
           </div>
           <div class="input-append">
-            <input type="password" name="pin" ng-model="user.pin" placeholder="Security Pin" ng-maxlength="4" ng-minlength="4" ng-pattern="/^[0-9]{4}$/" required />
+            <input type="password" name="pin" ng-model="user.pin" placeholder="Security Pin (1234)" ng-maxlength="4" ng-minlength="4" ng-pattern="/^[0-9]{4}$/" required />
             <span class="add-on"><img src="images/password_icon.png"/></span>
           </div>
           <p class="lgray">For security reasons, you will be prompted to enter PIN every 15 mins</p>
