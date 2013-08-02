@@ -21,7 +21,7 @@
         url = this.remoteEncrypted;
       }
       if (this.remote && !this.encrypted) {
-        url = this.remoteUnencrypted;
+        url = this.remoteUnencrypted + "auth.json";
       }
       return url;
     };

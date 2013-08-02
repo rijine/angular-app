@@ -12,7 +12,7 @@ class URLService
   auth: ->
     url = @local + "auth.json" if !@remote
     url = @remoteEncrypted if @remote and @encrypted
-    url = @remoteUnencrypted if @remote and !@encrypted
+    url = @remoteUnencrypted + "auth.json" if @remote and !@encrypted
     url
 
   account: ->
