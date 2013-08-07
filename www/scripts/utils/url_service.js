@@ -6,7 +6,7 @@
     function URLService() {
       this.remote = REMOTE;
       this.encrypted = ENCRYPTION;
-      this.local = "http://localhost:9000/jsons/";
+      this.local = "http://crm-ng.in/jsons/";
       this.remoteEncrypted = "http://localhost:3000/api/secure";
       this.remoteUnencrypted = "http://localhost:3000/api";
     }
