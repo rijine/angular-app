@@ -5,7 +5,7 @@ class URLService
   constructor: () ->
     @remote = REMOTE
     @encrypted = ENCRYPTION
-    @local = "http://localhost:9000/jsons/"
+    @local = "http://crm-ng.in/jsons/"
     @remoteEncrypted   = "http://localhost:3000/api/secure"
     @remoteUnencrypted = "http://localhost:3000/api"
 
