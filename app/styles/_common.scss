@@ -6,7 +6,7 @@
   @extend .btn-primary;
   padding: 7px 7px;
   border-radius: $border-radius;
-  @include background(linear-gradient(top, #0066CB, #005CB9));
+  @include background(linear-gradient(top, $app_blue, darken($app_blue, 10%)));
 }
 
 .btn-app-danger {

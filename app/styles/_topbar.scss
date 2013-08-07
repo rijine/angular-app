@@ -17,7 +17,7 @@
 
   li.active {
     a {
-      @include background(linear-gradient(top, #00446D, #005EA6));
+      @include background(linear-gradient(top, $app_blue, darken($app_blue, 10%)));
     }
   }
 

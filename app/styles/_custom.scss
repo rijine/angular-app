@@ -7,7 +7,7 @@
   .navbar-inner {
     border-radius: 0px;
     border: none;
-    @include background(linear-gradient(top, #007BC1, #0164B5));
+    @include background(linear-gradient(top, $app_blue, darken($app_blue, 10%)));
     @include box-shadow(#00467B 0px 1px 0px);
     a {
       color: white;
