@@ -1,6 +1,8 @@
 rm -rf www/*
 grunt coffee:dist
 grunt compass:server
+grunt cssmin
+grunt concat
 cp -R .tmp/* www/
 cp -R app/components www/
 cp -R app/jsons www/
