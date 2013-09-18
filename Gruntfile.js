@@ -222,8 +222,28 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         files: {
-          '<%= yeoman.dist %>/scripts/scripts.js': [
-            '<%= yeoman.dist %>/scripts/scripts.js'
+          '<%= yeoman.dist %>/scripts/libs.js': [
+            '<%= yeoman.app %>/components/jquery/jquery.min.js',
+            '<%= yeoman.app %>/components/jquery-ui/ui/jquery-ui.js',
+            '<%= yeoman.app %>/components/fullcalendar/fullcalendar.js',
+            '<%= yeoman.app %>/components/angular/angular.js',
+            '<%= yeoman.app %>/components/angular-resource/angular-resource.js',
+            '<%= yeoman.app %>/components/angular-ui-date/src/date.js',
+            '<%= yeoman.app %>/components/angular-cookies/angular-cookies.js',
+            '<%= yeoman.app %>/components/angular-sanitize/angular-sanitize.js',
+            '<%= yeoman.app %>/components/angular-ui-calendar/src/calendar.js',
+            '<%= yeoman.app %>/components/angular-ui-bootstrap/ui-bootstrap-tpls-0.3.0.js',
+            '<%= yeoman.app %>/components/underscore/underscore-min.js',
+            '<%= yeoman.app %>/components/charts/charts.js',
+            '<%= yeoman.app %>/components/moment/moment.min.js',
+            '<%= yeoman.app %>/components/cryptojs/components/core.js',
+            '<%= yeoman.app %>/components/cryptojs/components/lib-typedarrays.js',
+            '<%= yeoman.app %>/components/cryptojs/components/x64-core.js',
+            '<%= yeoman.app %>/components/cryptojs/components/enc-utf16.js',
+            '<%= yeoman.app %>/components/cryptojs/components/enc-base64.js',
+            '<%= yeoman.app %>/components/cryptojs/components/cipher-core.js',
+            '<%= yeoman.app %>/components/cryptojs/components/aes.js',
+            '<%= yeoman.app %>/components/cryptojs/components/tripledes.js'
           ]
         }
       }

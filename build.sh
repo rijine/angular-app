@@ -3,6 +3,7 @@ grunt coffee:dist
 grunt compass:server
 grunt cssmin
 grunt concat
+grunt uglify
 cp -R .tmp/* www/
 cp -R app/components www/
 cp -R app/jsons www/
